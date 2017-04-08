@@ -14,7 +14,7 @@ class QtTestWidget : public QObject
     Q_PROPERTY(int m_CorrectAnswer READ correctAnswer WRITE setCorrectAnswer NOTIFY correctAnswerChanged MEMBER true)
 
 public:
-    QtTestWidget();
+    QtTestWidget(QObject * parent = nullptr);
     QString question();
     QString imageSource();
     QString answer1();
@@ -22,6 +22,7 @@ public:
     QString answer3();
     QString answer4();
     int correctAnswer();
+
 
 signals:
     void questionChanged(QString question);
@@ -32,6 +33,7 @@ signals:
     void answer4Changed(QString answer4);
     void correctAnswerChanged(int answer);
 
+
 public slots:
     void setQuestion(QString question);
     void setImage(QString image_source);
@@ -40,6 +42,7 @@ public slots:
     void setAnswer3(QString answer3);
     void setAnswer4(QString answer4);
     void setCorrectAnswer(int answer);
+
 
 protected:
     QString m_Question;

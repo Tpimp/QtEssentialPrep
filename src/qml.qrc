@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>QuestionPage.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>TestSelectPage.qml</file>
     </qresource>
 </RCC>

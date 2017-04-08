@@ -1,0 +1,104 @@
+{
+    "Questions": [
+		{
+            "A1": "The Qt Project",
+            "A2": "The Qt Company",
+            "A3": "Nokia",
+            "A4": "The Open Source Community",
+            "CA": 1,
+            "I": "",
+            "Q": "Who owns and Controls Qt?"
+        },
+		{
+            "A1": "a proprietary technology maintained by the Qt Company.",
+            "A2": "a free version of Qt provided only for LGPL purposes.",
+            "A3": "a team with the Qt Company that maintains and distributes all of Qt.",
+            "A4": "an open ecosystem and infrastructure for developers and companies to contribute to Qt.",
+            "CA": 3,
+            "I": "",
+            "Q": "The Qt Project is..."
+        },
+		{
+            "A1": "the Qt Company through commercial terms.",
+            "A2": "Nokia and The Qt Company through a joint partnership.",
+            "A3": "the Qt company allowing re-licensing under both open source and commercial terms.",
+            "A4": "the public domain using Apache 2.0 standard.",
+            "CA": 2,
+            "I": "",
+            "Q": "All external contributions are licensed to..."
+        },
+		{
+            "A1": "kde",
+            "A2": "Canonical",
+            "A3": "ICS",
+            "A4": "Pelagicore",
+            "CA": 0,
+            "I": "",
+            "Q": "The Qt company has a binding agreement with ______________ free Qt foundation to ensure the availability of Qt under certain open source licenses for desktop and mobile platforms."
+        },
+		{
+            "A1": "GPL2 or GPLv3",
+            "A2": "Commercial",
+            "A3": "LGPL3",
+            "A4": "LGPL3,GPL2,GPLv3 or commercial",
+            "CA": 3,
+            "I": "",
+            "Q": "Qt can be licensed as..."
+        },
+		{
+            "A1": "LGPLv3 requires the end user to be able to install a modified LGPLv3 library (Qt Version). LGPLv3 projects cannot create closed systems based on Qt open source libraries.",
+            "A2": "LGPLv2.1 applications do not need to provide their source.",
+            "A3": "Using LGPLv2.1 allows software patent prosecution.",
+            "A4": "LGPLv3 allows use of GPLv3 projects.",
+            "CA": 0,
+            "I": "",
+            "Q": "What is the difference between LGPLv2.1 and LGPLv3?"
+        },
+		{
+            "A1": "Qt Charts.",
+            "A2": "Qt Virtual Keyboard.",
+            "A3": "Qt Charts and Qt Virtual Keyboard.",
+            "A4": "Qt Charts, Qt Virtual Keyboard and Qt Data Visualization.",
+            "CA": 3,
+            "I": "",
+            "Q": "What Qt Add-On(s) are licensed under GPLv3?"
+        },
+		{
+            "A1": "Qt Device Creation (commercial).",
+            "A2": "Qt Application License (commercial).",
+            "A3": "GPLv3 Qt (non-commercial).",
+            "A4": "LGPLv3 Qt (non-commercial).",
+            "CA": 2,
+            "I": "",
+            "Q": "When building a GPLv3 compliant embedded system with Qt open source library what license is necessary?"
+        },
+		{
+            "A1": "Qt Device Creation (commercial).",
+            "A2": "Qt Application License (commercial).",
+            "A3": "GPLv3 Qt (non-commercial).",
+            "A4": "LGPLv3 Qt (non-commercial).",
+            "CA": 0,
+            "I": "",
+            "Q": "When building a closed source embedded system with Qt open source library what license is necessary?"
+        },
+		{
+            "A1": "Qt Device Creation (commercial).",
+            "A2": "Qt Application License (commercial).",
+            "A3": "GPLv3 Qt (non-commercial).",
+            "A4": "LGPLv3 Qt (non-commercial).",
+            "CA": 0,
+            "I": "",
+            "Q": "When building a closed source application with Qt open source library what license is necessary?"
+        },
+		{
+            "A1": "No.",
+            "A2": "with a Qt Application License (commercial).",
+            "A3": "only if changes comply with GPLv3.",
+            "A4": "only if changes comply with LGPLv3).",
+            "CA": 0,
+            "I": "",
+            "Q": "Can I add new functionality to Qt Creator and distribute the new version?"
+        }
+    ],
+    "Type": "Licenses"
+}

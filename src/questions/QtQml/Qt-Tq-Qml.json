@@ -1,0 +1,14 @@
+{
+    "Questions": [
+        {
+            "A1": "Item is a subclass of Rect that allows Items to be defined as children.",
+            "A2": "the Qml extension of a QObject.",
+            "A3": "Item contains the attributes that are common across visual items, such as x and y position, width and height, anchoring and key handling support.",
+            "A4": "Item is a small base class allowing parent-child relationships to be created.",
+            "CA": 1,
+            "I": "",
+            "Q": "What are the features of Qml Item?"
+        }
+    ],
+    "Type": "Qml"
+}

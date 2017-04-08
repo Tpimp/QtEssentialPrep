@@ -4,8 +4,6 @@ import QtQuick.Layouts 1.1
 
 Item {
     id: item1
-    width: 1280
-    height: 720
     property alias button: button
     property alias answer1:answerDelegate
     property alias answer2:answerDelegate2
@@ -13,6 +11,8 @@ Item {
     property alias answer4:answerDelegate4
     property alias questionImage:questionImage
     property alias question:questionText
+    property real currentQuestion:0
+
     ColumnLayout {
         id: columnLayout
         anchors.fill: parent

@@ -3,6 +3,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.0
 
 ApplicationWindow {
+    id: myWindow
     visible: true
     width: 1280
     height: 720
@@ -26,32 +27,62 @@ ApplicationWindow {
             questionPage.question.text = question;
         }
     }
-    SwipeView {
-        id: swipeView
-        anchors.fill: parent
-        currentIndex: tabBar.currentIndex
-
-        QuestionPage {
-           id:questionPage
-           questionImage.source:"image://Images/test"
+    Connections{
+        target:QuestionLoader
+        onLoadedType:{
+            selectPage.addTest(count,type);
         }
-
-        Page {
-            Label {
-                text: qsTr("Second page")
-                anchors.centerIn: parent
-            }
+        onClearedTypes:{
+            selectPage.clearList();
+        }
+    }
+    Connections{
+        target:TestManager
+        onReadyToStart:{
+            swipeView.currentIndex = 1;
         }
     }
 
-    footer: TabBar {
-        id: tabBar
-        currentIndex: swipeView.currentIndex
-        TabButton {
-            text: qsTr("First")
+    SwipeView {
+        id: swipeView
+        anchors.fill: parent
+        TestSelectPage{
+            id:selectPage
+            height: myWindow.height
+            width: myWindow.width
+            start.onClicked:{
+                // begin a new test
+                var selected_items = selectPage.getSelected();
+                TestManager.startNewTest(selected_items)
+            }
         }
-        TabButton {
-            text: qsTr("Second")
+
+        QuestionPage {
+           id:questionPage
+           height: myWindow.height
+           width: myWindow.width
+           questionImage.source:"image://Images/test"
+           button.onClicked: {
+               if(answer1.checked){
+                   answer1.checked = false;
+                   TestManager.submitAnswer(0);
+               }
+               if(answer2.checked){
+                   answer2.checked = false;
+                   TestManager.submitAnswer(1);
+               }
+               if(answer3.checked){
+                   answer3.checked = false;
+                   TestManager.submitAnswer(2);
+               }
+               if(answer4.checked){
+                   answer4.checked = false;
+                   TestManager.submitAnswer(3);
+               }
+           }
         }
+    }
+    Component.onCompleted: {
+        QuestionLoader.loadQuestionSet(PWD,"/questions/License/Qt-Tq-Licenses.json");
     }
 }

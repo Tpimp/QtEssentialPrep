@@ -4,9 +4,12 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     qttestwidget.cpp \
-    qtquestionimageprovider.cpp
+    qtquestionimageprovider.cpp \
+    qttesttypeloader.cpp \
+    qttestmanager.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    questions.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -36,4 +39,6 @@ DISTFILES += \
 
 HEADERS += \
     qttestwidget.h \
-    qtquestionimageprovider.h
+    qtquestionimageprovider.h \
+    qttesttypeloader.h \
+    qttestmanager.h

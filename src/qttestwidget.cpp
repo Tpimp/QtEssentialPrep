@@ -1,6 +1,6 @@
 #include "qttestwidget.h"
 
-QtTestWidget::QtTestWidget()
+QtTestWidget::QtTestWidget(QObject* parent) : QObject(parent)
 {
 
 }

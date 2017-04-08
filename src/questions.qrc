@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>questions/License/Qt-Tq-Licenses.json</file>
+        <file>questions/QtQml/Qt-Tq-Qml.json</file>
+    </qresource>
+</RCC>
